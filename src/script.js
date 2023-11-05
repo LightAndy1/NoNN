@@ -1,11 +1,17 @@
-const boxes = document.querySelectorAll(".box");
+document.querySelectorAll(".box").forEach((box) => {
+  let clickCount = 0;
+  const originalColor = box.style.backgroundColor;
 
-boxes.forEach((box) => {
   box.addEventListener("click", () => {
-    if (box.classList.contains("active")) {
-      box.classList.remove("active", "clicked");
+    clickCount++;
+
+    if (clickCount === 1) {
+      box.style.backgroundColor = "#69dda7";
+    } else if (clickCount === 2) {
+      box.style.backgroundColor = "#ca7d80";
     } else {
-      box.classList.add("active", "clicked");
+      box.style.backgroundColor = originalColor;
+      clickCount = 0;
     }
   });
 });
