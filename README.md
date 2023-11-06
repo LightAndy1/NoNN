@@ -12,7 +12,7 @@ NoNN is a simple website that helps you track your progress during No Nut Novemb
 
 ## Getting Started 🚀
 
-1. Visit [NoNN Website](https://www.nonn-website.com).
+1. Visit [NoNN Website](https://lightandy1.github.io/NoNN/src/index.html).
 2. And start tracking your No Nut November journey.
 
 ### How Does It Work? 🤔
@@ -33,7 +33,7 @@ NoNN makes it easy to track your No Nut November progress with a simple and intu
 
 ## Support 💬
 
-For any questions or issues, please feel free to [contact our support team](mailto:andy.197197@yahoo.com) or visit our [FAQ page](https://www.nonn-website.com/faq).
+For any questions or issues, please feel free to contact our support team: andy.197197@yahoo.com.
 
 ## Contribute 🤝
 
