@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <title>NoNN</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <h1>NoNN</h1>
+    <h3>Your best No Nut November helper!</h3>
     <div class="main-container">
       <div class="container">
         <div class="box"></div>
@@ -49,8 +52,15 @@
         <div class="box"></div>
       </div>
       <div class="button-container">
-        <button type="submit" class="save main">Save</button>
-        <button type="reset" class="reset main">Reset</button>
+        <button type="button" class="save main" onclick="handleSave()">
+          Save
+        </button>
+        <button type="button" class="import main" onclick="handleImport()">
+          Import
+        </button>
+        <button type="reset" class="reset main" onclick="handleReset()">
+          Reset
+        </button>
       </div>
     </div>
     <script src="script.js"></script>
