@@ -1,3 +1,17 @@
+fetch("quotes.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const currentDate = new Date();
+    const day = currentDate.getDate();
+    const quote = data[`November ${day}`];
+
+    const quoteElement = document.querySelector(".quote");
+    quoteElement.textContent = `Quote of the day: ${quote}`;
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
 document.querySelectorAll(".box").forEach((box) => {
   let clickCount = 0;
 
@@ -17,10 +31,6 @@ document.querySelectorAll(".box").forEach((box) => {
     }
   });
 });
-
-function handleSave() {
-  createStatusJSON();
-}
 
 function createStatusJSON() {
   const boxes = [];
@@ -47,12 +57,13 @@ function createStatusJSON() {
 
   const blob = new Blob([jsonString], { type: "application/json" });
 
-  saveAs(blob, "status.json");
+  saveAs(blob, "NoNN-Journey.json");
 }
 
 function handleImport() {
   const fileInput = document.createElement("input");
   fileInput.type = "file";
+  fileInput.accept = "application/json";
 
   fileInput.addEventListener("change", function (event) {
     const file = event.target.files[0];
